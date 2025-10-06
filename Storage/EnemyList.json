@@ -1,0 +1,5 @@
+{
+    "EnemyMinHealth": 60,
+    "EnemyMaxHealth": 120,
+    "MaxDamage": 15
+}

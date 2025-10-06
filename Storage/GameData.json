@@ -1,0 +1,17 @@
+{
+    "playerName": "NULL",
+    "currentRoom": "start",
+    "playerHealth": 100,
+    "playerLevel": 0,
+    "playerInventory": [],
+    "rooms":{
+        "start":{
+            "visited":true,
+            "enemiesCleared": true,
+            "chestOneLooted": false
+        }
+    },
+    "storyFlags":{
+        "playerMade": false
+    }
+}

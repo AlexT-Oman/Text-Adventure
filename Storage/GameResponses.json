@@ -1,0 +1,28 @@
+{
+    "StartRoom":{
+        "LookWest": "You find Nothing but a bare stone wall",
+        "LookEast": "You find a table and a chest against a wall with a small window",
+        "EastSideRoom":{
+            "InspectTable":[],
+            "InspectChest":["Key"],
+            "InspectWindow":"You look out the window and see nothing but a mountains covered in snow"
+        },
+        "LookNorth":"You see a big metal door",
+        "NorthSideRoom":{
+            "InspectDoor_NoKey":"The door does not budge. There seems to be a key hole",
+            "InspectDoor_WithKey":"Maybe this key will unlock the door",
+            "TryUnlockDoor_NoKey":"I have nothing to unlock the door with",
+            "TryUnlockDoor_WithKey":"I put the key in the door and it clicks open",
+            "TryOpenDoor_Unlocked":"The door swung open, I can walk through now",
+            "TryOpenDoor_locked":"The door must be locked, there must be a key somewhere in this room. I should search the room"
+        },
+        "LookSouth":"There's chains hanging from the wall. I wonder why they didn't put me in those"
+    },
+
+
+    "flags":{
+        "hasStartRoomKey": false,
+        "startRoomDoorUnlocked": false
+    }
+    
+}
