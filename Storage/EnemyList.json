@@ -1,5 +1,7 @@
 {
-    "EnemyMinHealth": 60,
-    "EnemyMaxHealth": 120,
-    "MaxDamage": 15
+    "SkeletonGuard_1":{
+        "EnemyMinHealth": 60,
+        "EnemyMaxHealth": 120,
+        "MaxDamage": 15   
+    }
 }

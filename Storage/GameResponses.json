@@ -3,8 +3,8 @@
         "LookWest": "You find Nothing but a bare stone wall",
         "LookEast": "You find a table and a chest against a wall with a small window",
         "EastSideRoom":{
-            "InspectTable":[],
-            "InspectChest":["Key"],
+            "InspectTable":["StartRoomTable"],
+            "InspectChest":["StartRoomChest"],
             "InspectWindow":"You look out the window and see nothing but a mountains covered in snow"
         },
         "LookNorth":"You see a big metal door",
@@ -19,10 +19,35 @@
         "LookSouth":"There's chains hanging from the wall. I wonder why they didn't put me in those"
     },
 
+    "ForkedHallway":{
+        "HasEnemies": ["SkeletonGuard_1"],
+        "LookNorth": "You see a big door with an intimidating skull on it",
+        "NorthSideRoom": {
+            "InspectDoor_Nokey": "It looks like something should be put into the eyes of the skull. I wonder if that will open it",
+            "InspectDoor_WithKey":"I should try seeing what the keys do when I put them in the eyes",
+            "TryUnlockDoor_NoKey":"I should find both keys first",
+            "TryUnlockDoor_WithKey":"The skull begins the glow and vibrate. The jaw seems to be slowly opening and I think I see a hole behind it",
+            "InspectJawHole":"I can't see anything in the hole. It looks about the size of my hand though.",
+            "PutHandInJawHole":"I feel a knob and it seems like it can twist",
+            "TryOpenDoor":"I hear several clicks and bangs but the door seems to be opening on its own now"
+        },
+        "LookWest": "You see a wood door with light peaking through the cracked between the boards",
+        "WestSideRoom":{
+            "InspectDoor":"The door seems to barely be standing, I can see the other room but I can't see whats in it. I don't think it's locked",
+            "TryOpenDoor":"The door squeals as it opens"
+        }
+    },
 
-    "flags":{
+
+    "tempFlagsPutInGameData":{
         "hasStartRoomKey": false,
-        "startRoomDoorUnlocked": false
+        "startRoomDoorUnlocked": false,
+        "hasBothSkullKeys": false,
+        "skullDoorJawOpen": false,
+        "skullDoorOpen": false,
+        "ForkedHallwayEnemiesCleared": 0,
+        "ForkedHallwayTutorialEnemyFinished": false,
+        "":false
     }
     
 }
