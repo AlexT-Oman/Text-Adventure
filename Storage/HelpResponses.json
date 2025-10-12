@@ -1,0 +1,20 @@
+{
+    "Controls":{
+        "Inspect": "Type \"Inspect\" then the item you want to inspect",
+        "Move": "Type \"Move\" then a cardinal direction to move to that side of the room",
+        "Look": "Type \"Look\" then a cardinal direction to see whats on that side of the room",
+        "Interact": "Type \"Interact\" with and item in the room to select it and pick how you interact it"
+    },
+
+    "Interactions":{
+        "Unlock":"Type \"Unlock\" to unlock the selected item in the room",
+        "Open":"Type \"Open\" to open the selected container or door. If it is a door, you will automatically walk through the door into the next room"
+    },
+
+    "Combat":{
+        "Basics":"If an enemy is in the room when you enter it, combat will automatically begin so make sure your ready before entering new rooms",
+        "Fight":"Type \"Fight\" to try and deal damage to the enemy your figting",
+        "Defend":"Type \"Defend\" to try and protect yourself from damage",
+        "Flee":"Type \"Flee\" to attempt to run back into the last room you were in and leave combat"
+    }
+}

@@ -1,17 +1,16 @@
 {
-    "playerName": "NULL",
-    "currentRoom": "start",
-    "playerHealth": 100,
-    "playerLevel": 0,
-    "playerInventory": [],
-    "rooms":{
-        "start":{
-            "visited":true,
-            "enemiesCleared": true,
-            "chestOneLooted": false
-        }
-    },
-    "storyFlags":{
-        "playerMade": false
-    }
+    "PlayerName": "NULL",
+    "CurrentRoom": "start",
+    "PlayerHealth": 100,
+    "PlayerLevel": 0,
+    "PlayerInventory": [],
+    "Location": "StartRoom",
+    "HasStartRoomKey": false,
+    "StartRoomDoorUnlocked": false,
+    "HasBothSkullKeys": false,
+    "SkullDoorJawOpen": false,
+    "SkullDoorOpen": false,
+    "ForkedHallwayEnemiesCleared": 0,
+    "ForkedHallwayTutorialEnemyFinished": false,
+    "RoomsVisited":["StartRoom"]
 }

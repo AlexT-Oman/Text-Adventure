@@ -1,4 +1,22 @@
 {
-    "StartRoomChest":["Health_Potion"],
-    "StartRoomTable":["Rusty_Sword", "Weak_Sheild"]
+    "Lootables":{
+        "StartRoomChest":["Health_Potion"],
+        "StartRoomTable":["Rusty_Sword", "Weak_Sheild"]
+    },
+    
+    "Items":{
+        "Health_Potion":{
+            "MinHealthRecoveryPoints": 7,
+            "MaxHealthRecoveryPoints": 15
+        },
+        "Rusty_Sword":{
+            "MinDamageDelt":10,
+            "MaxDamageDelt":25
+        },
+        "Weak_Sheild":{
+            "MinDamageProtect": 0,
+            "MaxDamageProtect": 100
+        }
+    }
+
 }

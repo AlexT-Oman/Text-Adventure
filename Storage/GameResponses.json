@@ -35,19 +35,29 @@
         "WestSideRoom":{
             "InspectDoor":"The door seems to barely be standing, I can see the other room but I can't see whats in it. I don't think it's locked",
             "TryOpenDoor":"The door squeals as it opens"
+        },
+        "LookEast": "You see a rickety wooden door leaning slightly in its frame.",
+        "EastSideRoom":{
+            "InspectDoor": "The door looks to barely be standing. Shouldn't be hard to open",
+            "TryOpenDoor": "The door was a little jamed but a good tug made the door swing open"
+        },
+        "LookSouth": "There's the door to the room I woke up in",
+        "SouthSideRoom":{
+            "InspectDoor": "The metal door is a little rusty on this side but still unlocked",
+            "TryOpenDoor": "The door swings open again"
         }
     },
 
 
     "tempFlagsPutInGameData":{
+        "location": "StartRoom",
         "hasStartRoomKey": false,
         "startRoomDoorUnlocked": false,
         "hasBothSkullKeys": false,
         "skullDoorJawOpen": false,
         "skullDoorOpen": false,
         "ForkedHallwayEnemiesCleared": 0,
-        "ForkedHallwayTutorialEnemyFinished": false,
-        "":false
+        "ForkedHallwayTutorialEnemyFinished": false
     }
     
 }
