@@ -5,6 +5,7 @@
     "PlayerLevel": 0,
     "PlayerInventory": [],
     "Location": "StartRoom",
+    "nextPossibleLocations":["ForkedHallway"],
     "HasStartRoomKey": false,
     "StartRoomDoorUnlocked": false,
     "HasBothSkullKeys": false,

@@ -51,6 +51,7 @@
 
     "tempFlagsPutInGameData":{
         "location": "StartRoom",
+        "nextPossibleLocations":[],
         "hasStartRoomKey": false,
         "startRoomDoorUnlocked": false,
         "hasBothSkullKeys": false,
