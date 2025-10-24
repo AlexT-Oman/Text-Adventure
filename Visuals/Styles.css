@@ -1,3 +1,8 @@
 #Output{
     height: 700px;
 }
+
+#UserInput{
+    width: 115rem;
+    height: 13rem;
+}

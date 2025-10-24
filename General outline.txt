@@ -1,0 +1,64 @@
+Overall process flow:
+- User will put their input into the textarea element.
+- either when the user hits enter or press a submit button the value is sent to Main.js and textarea gets cleared
+- Main will tell Responses to create a new li element and will place the textarea value into the response
+- Main will hand the input off to InputHandler.js where it will check the user input with a list of all acceptable inputs.
+- Depending on the input the action will talk to Navigation.js or Combat.js
+- Navigation or Combat will update GameData.json and send Responses the new state
+- Responses will take the new state and check GameResponses.json for the appropriate output to the new state
+- Loop repeats
+
+
+What each file is intended to do (subject to change):
+- Main is intended to start and stop the game. It will make sure to be looking for the enter key to be pressed along with clearing the value of textarea when the
+  user submits their instruction. Eventually Main will also handle the save and loading function when it is implemented
+- Responses role is make sure to create all new li elements and other DOM manipulations and give other files (such as Navigation or Combat) the functions necessary to
+  update the output using the updated game state. Responses will pull the correct response from GameResponses.json and send DOM manipulation functions to Navigation
+  or Combat to properly display the outputs. Responses should never write any game data
+- InputHandler will take all inputs and determine what the user is attempting to do using accepted inputs (TODO: create json with acceptable inputs). Once the action
+  is properly determined, it will pull needed functions from Navigation or Combat to implement the users instruction. InputHandler should make sure to check player
+  state and ensure the player can't navigate until out of combat and make sure the reverse is true
+- Navigation is to process user input for navigation and interaction. It will update the players position and interact with the players inventory and stats.
+  Navigation is a more broad file intended to handle all actions outside of Combat. Once the game state has been updated it will pull the correct functions from
+  Responses to update the output
+- Combat will handle all events within combat. It will process enemy damage, player damage (both given and received). It will also handle the games fail state. Most
+  enemy actions will be handled here. Combat will change the state of player health, enemy health, and number of enemies in a room. (TODO: Make a checker for
+  Navigation so the player can be put into a combat state)
+- Utils will contain basic functions that may be needed by 2 or more different files
+
+Known bugs:
+- None yet, core loop unfinished
+
+Needs to be added:
+- Navigation:
+    - functions to change player location
+    - functions to update player health
+    - functions to update player inventory
+    - functions to interact with inventory
+- Combat:
+    - functions to attack an enemy
+    - functions to heal
+    - Enemy attacks
+    - Enemy Healing
+    - Enemy Logic
+    -
+- Utils:
+    - functions to update game state
+    - functions to update world state
+- Responses:
+    - add new li elements with updates (will need to work with main)
+    - make ul scrollable so the whole list is viewable
+    - pull responses from GameResponses.json
+- InputHandler:
+    - Check user input
+    - Check game/world state
+Main:
+    - Save/Load system
+    - Checker for the enter key (work with Responses)
+
+Current roadmap:
+- build a input then output loop
+- add navigation to the loop
+- add game/world state manipulation
+- add combat to the loop
+- add functional health/inventory manipulation
